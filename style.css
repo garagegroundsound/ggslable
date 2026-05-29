@@ -1,0 +1,100 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#fff;
+color:#111;
+font-family:'Montserrat',sans-serif;
+overflow-x:hidden;
+}
+
+/* BACKGROUND LOGO */
+.background{
+position:fixed;
+inset:0;
+background:url('assets/logo.PNG') center/cover no-repeat;
+opacity:0.05;
+filter:grayscale(100%) blur(1px);
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+inset:0;
+background:rgba(255,255,255,0.85);
+z-index:-1;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.gothic{
+font-size:64px;
+letter-spacing:6px;
+font-weight:700;
+font-family:serif;
+text-transform:uppercase;
+}
+
+/* ARTISTS */
+.artists{
+padding:100px 20px;
+text-align:center;
+}
+
+h2{
+letter-spacing:8px;
+margin-bottom:40px;
+}
+
+.artist-grid{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.artist-card{
+padding:12px 18px;
+border:1px solid #ddd;
+transition:0.3s;
+}
+
+.artist-card:hover{
+transform:translateY(-3px);
+}
+
+.artist-card a{
+text-decoration:none;
+color:#111;
+}
+
+/* DEMO */
+.demo{
+text-align:center;
+padding:80px 20px;
+}
+
+.demo a{
+color:#111;
+letter-spacing:3px;
+text-decoration:none;
+border-bottom:1px solid #000;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+font-size:12px;
+opacity:0.6;
+}
